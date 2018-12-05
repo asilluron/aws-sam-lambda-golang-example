@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Globals:
+  Function:
+    Timeout: 120
+Resources:
+  HelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: hello-world
+      Handler: ./bin/hello
+      Runtime: go1.x
+      CodeUri: .
+      Tracing: PassThrough
+      Environment:
+        Variables:
+          HELLO: ${HELLO:Hello}

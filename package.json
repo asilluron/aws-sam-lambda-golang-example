@@ -1,0 +1,33 @@
+{
+  "name": "aws-sam-lambda-golang-example",
+  "version": "0.0.0",
+  "description": "AWS SAM CLI lambda golang invocation example for local testing",
+  "main": "e2e-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilluron/aws-sam-lambda-golang-example.git"
+  },
+  "keywords": [
+    "aws",
+    "sam",
+    "cli",
+    "lambda",
+    "golang",
+    "direct",
+    "invocation",
+    "serverless"
+  ],
+  "author": "Andrew Silluron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asilluron/aws-sam-lambda-golang-example/issues"
+  },
+  "homepage": "https://github.com/asilluron/aws-sam-lambda-golang-example#readme",
+  "dependencies": {
+    "aws-sdk": "^2.370.0",
+    "dotenv": "^6.2.0"
+  }
+}
